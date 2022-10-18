@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/matheusmfl/StoryBook-Designer-System",
   "name": "ignitelab",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +9,7 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",

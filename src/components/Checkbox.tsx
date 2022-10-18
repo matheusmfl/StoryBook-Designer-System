@@ -3,19 +3,19 @@ import {Check} from 'phosphor-react'
 
 //Usei o Slot do RadixUI para poder passar a propriedade asChild
 
-export interface CheckboxProps {
+export interface CheckboxProps extends CheckboxPrimitive.CheckboxProps {
 
 }
 
-export function Checkbox({ }: CheckboxProps){
+export function Checkbox(props: CheckboxProps){
 
     return(
         <CheckboxPrimitive.Root
-        className='w-6 h-6 p-[2px] bg-gray-800 rounded'
+        className='w-6 h-6 p-[2px] bg-gray-800 rounded' {...props}
         >
 
-        <Check weight='bold' className='w-5 h-5 text-cyan-500'/>
         <CheckboxPrimitive.Indicator asChild>
+        <Check weight='bold' className='w-5 h-5 text-cyan-500'/>
 
         </CheckboxPrimitive.Indicator>
 
